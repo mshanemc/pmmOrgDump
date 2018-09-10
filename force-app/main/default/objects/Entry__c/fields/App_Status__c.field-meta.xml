@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>App_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>App Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Just an idea</fullName>
+                <default>false</default>
+                <label>Just an idea</label>
+            </value>
+            <value>
+                <fullName>Prototyping/Developing</fullName>
+                <default>false</default>
+                <label>Prototyping/Developing</label>
+            </value>
+            <value>
+                <fullName>Rolling out to users</fullName>
+                <default>false</default>
+                <label>Rolling out to users</label>
+            </value>
+            <value>
+                <fullName>In production for a few months</fullName>
+                <default>false</default>
+                <label>In production for a few months</label>
+            </value>
+            <value>
+                <fullName>In production for more than 3 months</fullName>
+                <default>false</default>
+                <label>In production for more than 3 months</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

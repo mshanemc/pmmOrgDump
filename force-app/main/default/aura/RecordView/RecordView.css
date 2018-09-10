@@ -1,0 +1,8 @@
+.THIS header {
+    display: none;
+}
+.THIS .slds-card__body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-height: 40rem;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- App Status --></label>
+    <name>App_Status__c</name>
+    <picklistValues>
+        <masterLabel>In production for a few months</masterLabel>
+        <translation><!-- In production for a few months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In production for more than 3 months</masterLabel>
+        <translation><!-- In production for more than 3 months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Just an idea</masterLabel>
+        <translation><!-- Just an idea --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prototyping/Developing</masterLabel>
+        <translation><!-- Prototyping/Developing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rolling out to users</masterLabel>
+        <translation><!-- Rolling out to users --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

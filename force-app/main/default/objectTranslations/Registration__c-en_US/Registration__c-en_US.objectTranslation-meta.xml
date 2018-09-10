@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Registration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Registrations</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Add_to_Calendar --></label>
+        <name>Add_to_Calendar</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Calendar_Community --></label>
+        <name>Add_to_Calendar_Community</name>
+    </webLinks>
+</CustomObjectTranslation>

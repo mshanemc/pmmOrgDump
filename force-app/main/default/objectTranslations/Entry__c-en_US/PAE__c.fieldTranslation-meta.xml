@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Platform AE&apos;s name --></help>
+    <label><!-- PAE --></label>
+    <name>PAE__c</name>
+</CustomFieldTranslation>

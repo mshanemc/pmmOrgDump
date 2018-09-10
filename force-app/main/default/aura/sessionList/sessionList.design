@@ -1,0 +1,4 @@
+<design:component >
+		<design:attribute name="isRegistered" label="is Registered" Description="using Community's audience features, are you putting this on a page that is visible only to registered (not guest) users? " />
+
+</design:component>

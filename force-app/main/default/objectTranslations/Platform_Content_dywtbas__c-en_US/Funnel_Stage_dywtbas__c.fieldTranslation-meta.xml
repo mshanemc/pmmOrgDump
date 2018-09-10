@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Funnel Stage --></label>
+    <name>Funnel_Stage_dywtbas__c</name>
+    <picklistValues>
+        <masterLabel>BOFU</masterLabel>
+        <translation><!-- BOFU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOFU</masterLabel>
+        <translation><!-- MOFU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TOFU</masterLabel>
+        <translation><!-- TOFU --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

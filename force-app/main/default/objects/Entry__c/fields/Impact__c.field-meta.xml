@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Impact__c</fullName>
+    <externalId>false</externalId>
+    <label>Impact</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>a few people</fullName>
+                <default>false</default>
+                <label>a few people</label>
+            </value>
+            <value>
+                <fullName>a department</fullName>
+                <default>false</default>
+                <label>a department</label>
+            </value>
+            <value>
+                <fullName>a few departments</fullName>
+                <default>false</default>
+                <label>a few departments</label>
+            </value>
+            <value>
+                <fullName>everyone except the dog</fullName>
+                <default>false</default>
+                <label>everyone except the dog</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

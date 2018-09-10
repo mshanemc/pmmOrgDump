@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rachel</fullName>
+    <booleanFilter>(1 OR 2) and (3 or 4)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Short_Description__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Priority__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Done,Won&#39;t do</value>
+    </filters>
+    <filters>
+        <field>LAST_UPDATE</field>
+        <operation>equals</operation>
+        <value>LAST_N_DAYS:10</value>
+    </filters>
+    <filters>
+        <field>OWNER.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>Beard</value>
+    </filters>
+    <filters>
+        <field>Users__c</field>
+        <operation>contains</operation>
+        <value>Rachel Beard</value>
+    </filters>
+    <label>Rachel</label>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Suffix_needs_a_dot_in_middle</fullName>
+    <active>true</active>
+    <description>Not having a dot, starting or ending with a dot is not allowed</description>
+    <errorConditionFormula>OR (
+  NOT(CONTAINS(Suffix__c, &quot;.&quot;)),
+  BEGINS(Suffix__c, &quot;.&quot;),
+  RIGHT(Suffix__c, 1) == &quot;.&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Suffix__c</errorDisplayField>
+    <errorMessage>The suffix should be something.something (there&#39;s a dot in there, buddy!)</errorMessage>
+</ValidationRule>

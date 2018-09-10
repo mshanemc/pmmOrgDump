@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- this project was submitted by the person and assigned to themself --></help>
+    <label><!-- Self-Submitted --></label>
+    <name>Self_Submitted__c</name>
+</CustomFieldTranslation>

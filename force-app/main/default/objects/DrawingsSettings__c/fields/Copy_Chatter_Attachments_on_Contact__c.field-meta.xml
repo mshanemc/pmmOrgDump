@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_Chatter_Attachments_on_Contact__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>copies the most recent photo attachment on a contact to be the contact&#39;s chatter profile photo (if the contact is also a community user)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>copies the most recent photo attachment on a contact to be the contact&#39;s chatter profile photo (if the contact is also a community user)</inlineHelpText>
+    <label>Copy Chatter Attachments on Contact</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

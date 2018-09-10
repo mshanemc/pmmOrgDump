@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The name of the profile that your community users should be created with.  (Example: Customer Community User, Customer Community Login User, or some custom profile you&apos;ve cloned/created) --></help>
+    <label><!-- Contact Profile Name --></label>
+    <name>Contact_Profile_Name__c</name>
+</CustomFieldTranslation>

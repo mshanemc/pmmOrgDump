@@ -1,0 +1,91 @@
+.THIS {
+    font-size: .9rem;
+}
+
+.THIS .projects li {
+    padding: 0;
+}
+
+.THIS .item {
+    padding: .25rem 1rem .5rem 1rem;
+    cursor: pointer;
+}
+
+.THIS .hide {
+    max-height: 0;
+    overflow: hidden;
+    /* transition: max-height 1s; */
+}
+
+.THIS .item:hover {
+    background-color: rgb(243, 242, 242)
+}
+
+.THIS .tasks .item:hover {
+    box-shadow: rgba(0, 112, 210, 1.0) 4px 0 0 inset;
+}
+
+.THIS .item:hover .slds-badge {
+    background-color: #AAAAAA;
+    color: white;    
+}
+
+.THIS .item .slds-badge {
+    font-size: .3rem;
+    margin-top: 3px;
+    margin-bottom: 0;
+    padding: .20rem .5rem;
+}
+
+.THIS .selected, .THIS .selected:hover {
+    background-color: rgba(0, 112, 210, 0.1);
+    box-shadow: rgba(0, 112, 210, 1.0) 4px 0 0 inset;
+}
+
+.THIS .selected .slds-badge, .THIS .selected:hover .slds-badge {
+    background-color: #000033;
+    color: white;
+}
+
+.THIS .tasks {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.THIS .show {
+    display: block;
+    max-height: 600px;
+    box-shadow: rgba(0, 112, 210, 1.0) 4px 0 0 inset;    
+    /* transition: max-height 1s; */
+}
+
+.THIS li.task {
+    padding-top: 0;
+}
+
+.THIS li input[type="checkbox"] {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.THIS li .plus {
+    margin-left: .5rem;
+}
+
+.THIS li input[type="text"] {
+    width: 100%;
+}
+
+.THIS .slds-icon_x-small {
+    width: .75rem;
+    height: .75rem;
+    margin-right: .5rem;
+}
+
+.THIS .expanded {
+    box-shadow: rgba(0, 112, 210, 1.0) 4px 0 0 inset;
+}
+
+.THIS .expanded .slds-icon {
+    transform: rotate(90deg);    
+}

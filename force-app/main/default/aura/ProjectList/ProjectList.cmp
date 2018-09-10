@@ -1,0 +1,89 @@
+<aura:component controller="ProjectsController" implements="force:hasRecordId,flexipage:availableForAllPageTypes" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:registerEvent name="projectSelectionEvent" type="c:ProjectSelectionEvent"/>
+    <aura:handler event="c:ProjectSelectionEvent" action="{!c.handleProjectSelectionEvent}"/>
+    <aura:handler event="c:ProjectChangedEvent" action="{!c.handleProjectChangedEvent}"/>    
+    <aura:attribute name="title" type="String" default="Projects List" />
+    <aura:attribute name="status" type="String" default="Doing" />
+    <aura:attribute name="items" type="Object" />
+    <aura:attribute name="projectId" type="String" />
+    <aura:attribute name="newProjectName" type="String" />
+    <aura:attribute name="taskId" type="String" />
+    <aura:attribute name="showProjectModal" type="Boolean" default="false" />
+    
+    <lightning:card title="{!v.title}" >
+        <aura:set attribute="actions">
+            <lightning:button label="New" onclick="{!c.showProjectModal}" />
+        </aura:set>        
+        <aura:if isTrue="{!(v.items.length == 0)}">
+            <div class="item"><em>No projects found.</em></div>
+            <aura:set attribute="else">
+                <ul aura:id="projects" class="projects">
+                    <aura:iteration items="{!v.items}" var="item">
+                        <li id="{!item.id}" class="project">
+                            <div class="{! item.id == v.recordId ? 'item slds-truncate selected expanded' : (item.id == v.projectId) ?  'item slds-truncate expanded' : 'item slds-truncate'}" onclick="{!c.projectSelected}">
+                                <aura:if isTrue="{!(item.duein != null)}">
+                                    <div class="slds-badge slds-float_right">
+                                        {!item.duein} days
+                                    </div>
+                                </aura:if>
+                                <lightning:icon iconName="utility:chevronright" size="x-small" />
+                                {!item.label}
+                            </div>
+                            <ul class="{! item.id == v.projectId ? 'tasks show' : 'tasks'}">
+                                <aura:iteration items="{!item.items}" var="task">
+                                    <li id="{!task.id}" class="task">
+                                        <div class="{! task.id == v.recordId ? 'item slds-truncate selected' : 'item slds-truncate'}" onclick="{!c.taskSelected}">
+                                            <aura:if isTrue="{!(task.duein != null)}">
+                                                <div class="slds-badge slds-float_right">
+                                                    {!task.duein} days
+                                                </div>
+                                            </aura:if>
+                                            <input value="{!task.id}" type="checkbox" onclick="{!v.closeTask}" /> 
+                                            {!task.label}
+                                        </div>
+                                    </li>
+                                </aura:iteration>
+                                <li>
+                                    <div class="slds-grid item">
+                                        <div class="slds-col plus slds-grow-none">
+                                            <lightning:icon iconName="utility:add" size="x-small" />
+                                        </div>
+                                        <div class="slds-col slds-p-right_x-small">
+                                            <input type="text" placeholder="Add a new task." />
+                                        </div>
+                                        <div class="slds-col slds-grow-none">
+                                            <a href="javascript:void(0)" onclick="{!c.addTask}">Add</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>                                                
+                        </li>
+                    </aura:iteration>
+                </ul>
+            </aura:set>
+        </aura:if>
+    </lightning:card>
+    
+    <aura:if isTrue="{!v.showProjectModal}">
+            <section role="dialog" tabindex="-1" aria-modal="true" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Create a Project</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <lightning:input aura:id="projectName" label="Project Name" name="projectName" value="{!v.newProjectName}" />
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <button class="slds-button slds-button_neutral" onclick="{!c.hideProjectModal}">Cancel</button>
+                        <button class="slds-button slds-button_brand" onclick="{!c.createProject}">Create</button>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+    
+</aura:component>

@@ -1,0 +1,33 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,force:hasRecordId" controller="workshopsClass">
+
+
+	<aura:attribute name="workshops" type="object[]"/>
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+	<lightning:layout horizontalAlign="space" multipleRows="true" pullToBoundary="medium" verticalAlign="stretch" >
+
+		<aura:iteration items="{!v.workshops}" var="w">
+			<lightning:layoutItem padding="around-medium" size="12" smallDeviceSize="12" mediumDeviceSize="6">
+				<!--icons at https://www.lightningdesignsystem.com/icons/ -->
+				<lightning:card variant="base" class="">
+					<aura:set attribute="title">
+						<div class="card_title">{!w.Name}</div>
+					</aura:set>
+					<aura:set attribute="actions">
+						<!--actions go here, mostly buttons!-->
+						<lightning:button label="Schedule" onclick="{!c.schedule}" value="{!w.Id}" variant="brand"/>
+					</aura:set>
+					<aura:set attribute="footer">
+						<!--footer markup-->
+					</aura:set>
+					<div class="slds-p-horizontal_medium">
+						<lightning:formattedRichText value="{!w.Abstract__c}" />
+					</div>
+				</lightning:card>
+
+			</lightning:layoutItem>
+		</aura:iteration>
+
+	</lightning:layout>
+
+</aura:component>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>breaks the execution context between a new score and the chatter post, so maybe customer isn&#39;t doing it?</description>
+    <eventType>StandardVolume</eventType>
+    <label>New Score</label>
+    <pluralLabel>New Scores</pluralLabel>
+</CustomObject>

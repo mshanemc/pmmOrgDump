@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Heroku</fullName>
+        <default>false</default>
+        <label>Heroku</label>
+    </customValue>
+    <customValue>
+        <fullName>IoT</fullName>
+        <default>false</default>
+        <label>IoT</label>
+    </customValue>
+    <customValue>
+        <fullName>Lightning</fullName>
+        <default>false</default>
+        <label>Lightning</label>
+    </customValue>
+    <customValue>
+        <fullName>Demos</fullName>
+        <default>false</default>
+        <label>Demos</label>
+    </customValue>
+    <customValue>
+        <fullName>TPMM</fullName>
+        <default>false</default>
+        <label>TPMM</label>
+    </customValue>
+    <customValue>
+        <fullName>Brand</fullName>
+        <default>false</default>
+        <label>Brand</label>
+    </customValue>
+    <masterLabel>Work Areas</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

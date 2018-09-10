@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Entry</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Entries</value>
+    </caseValues>
+    <layouts>
+        <layout>Entry Layout</layout>
+        <sections>
+            <label><!-- App Details --></label>
+            <section>App Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Platform Sales Team --></label>
+            <section>Platform Sales Team</section>
+        </sections>
+        <sections>
+            <label><!-- User Info --></label>
+            <section>User Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>External Layout</layout>
+        <sections>
+            <label><!-- App Details --></label>
+            <section>App Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- User Info --></label>
+            <section>User Info</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Action for Score --></label>
+        <name>Action_for_Score</name>
+    </quickActions>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- The contest is no longer accepting entries. --></errorMessage>
+        <name>After_End</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The contest is not accepting entries yet. --></errorMessage>
+        <name>Before_start</name>
+    </validationRules>
+</CustomObjectTranslation>

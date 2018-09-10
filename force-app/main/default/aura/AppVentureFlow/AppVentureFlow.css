@@ -1,0 +1,25 @@
+/* .THIS {
+	color:white;
+}
+
+.THIS .slds-card__body.slds-card__body_inner.centerWrapper.flowruntimeBody{
+	color:white;
+}
+
+.THIS .richTextLabel.slds-form-element__label.flowruntimeRichTextWrapper {
+	color:white;
+}
+
+.THIS .richTextLabel.flowruntimeRichTextWrapper {
+	color:white;
+
+}
+
+.THIS .slds-form-element__label.flowruntimeRichTextWrapper {
+	color: white;
+}
+*/
+
+.THIS .slds-checkbox .flowruntimeInputWrapper .uiBlock {
+	max-width:100%;
+}

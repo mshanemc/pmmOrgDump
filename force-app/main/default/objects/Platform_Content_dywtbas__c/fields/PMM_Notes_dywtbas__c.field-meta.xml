@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMM_Notes_dywtbas__c</fullName>
+    <description>A place for PMMs to add notes about this piece of content</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter your notes on this piece of content</inlineHelpText>
+    <label>PMM Notes</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

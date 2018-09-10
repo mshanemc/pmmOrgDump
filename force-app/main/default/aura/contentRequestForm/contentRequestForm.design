@@ -1,0 +1,4 @@
+<design:component >
+  	<design:attribute name="source" label="source" Description="indicates where the request is coming from (like a booth, or event/booth, etc)" />
+
+</design:component>

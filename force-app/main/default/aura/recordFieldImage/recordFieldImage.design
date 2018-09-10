@@ -1,0 +1,3 @@
+<design:component >
+	 	<design:attribute name="field" label="field" Description="the field containing an image url that you want displayed" />
+</design:component>

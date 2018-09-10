@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Put anything here- - it doesn&apos;t have to be a user, lead, or contact --></help>
+    <label><!-- Free Name --></label>
+    <name>Free_Name__c</name>
+</CustomFieldTranslation>

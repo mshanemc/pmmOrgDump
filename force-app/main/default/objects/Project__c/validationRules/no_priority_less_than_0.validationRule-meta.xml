@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>no_priority_less_than_0</fullName>
+    <active>true</active>
+    <errorConditionFormula>Priority__c &lt; 0</errorConditionFormula>
+    <errorDisplayField>Priority__c</errorDisplayField>
+    <errorMessage>priority must be a positive value</errorMessage>
+</ValidationRule>

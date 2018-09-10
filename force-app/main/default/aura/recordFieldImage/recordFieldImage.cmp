@@ -1,0 +1,11 @@
+<aura:component implements="force:hasRecordId,forceCommunity:availableForAllPageTypes,force:appHostable">
+	<aura:attribute name="field" type="string" access="public" required="true" default=""/>
+	<aura:attribute name="imgSrc" type="string" access="public" required="true" default=""/>
+
+
+	<force:recordData aura:id="frd" mode="VIEW" recordId="{!v.recordId}" targetFields="{!v.targetFields}" layoutType="FULL" recordUpdated="{!c.onRecordLoad}"/>
+	<aura:attribute name="targetFields" type="Object"/>
+
+	<img src="{!v.imgSrc}" id="rfi"/>
+
+</aura:component>

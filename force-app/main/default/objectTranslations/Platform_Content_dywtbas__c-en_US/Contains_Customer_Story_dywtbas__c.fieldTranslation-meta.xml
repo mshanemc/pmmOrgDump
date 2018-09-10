@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Does this asset involve a customer company or Trailblazer? --></help>
+    <label><!-- Contains Customer Story --></label>
+    <name>Contains_Customer_Story_dywtbas__c</name>
+</CustomFieldTranslation>

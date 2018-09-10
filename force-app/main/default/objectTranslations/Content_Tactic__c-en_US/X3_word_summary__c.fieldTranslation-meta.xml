@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- from org62 campaign --></help>
+    <label><!-- 3 word summary --></label>
+    <name>X3_word_summary__c</name>
+</CustomFieldTranslation>

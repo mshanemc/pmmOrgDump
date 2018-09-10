@@ -1,0 +1,35 @@
+<aura:component implements="force:hasRecordId,forceCommunity:availableForAllPageTypes">
+
+	<aura:attribute name="regBaseURL" type="string" default="" access="public" required="false"/>
+	<aura:attribute name="actionWording" type="string" access="public" required="false" default="To get started, "/>
+	<aura:attribute name="loginBaseURL" type="string" default="" access="public" required="false" />
+	<aura:attribute name="buttonURL" type="string"/>
+
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+	<!-- The original version	 -->
+	<div class="slds-m-vertical_large slds-show_medium">
+		<div class="slds-align_absolute-center">
+
+					<span class="slds-text-heading_large slds-m-horizontal_medium">{!v.actionWording}</span>
+					<a href="{!v.buttonURL}" class="slds-button slds-button_brand">Register</a>
+					<span class="slds-text-heading_large slds-m-horizontal_medium"> or </span>
+					<a href="{!v.loginBaseURL}" class="slds-button slds-button_neutral">Log in</a>
+
+		</div>
+	</div>
+
+	<!-- phones -->
+	<div class="slds-m-vertical_small slds-hide_medium">
+		<div class="slds-align_absolute-center">
+
+			<span class="small slds-m-horizontal_xxx-small">{!v.actionWording}</span>
+			<a href="{!v.buttonURL}" class="slds-button slds-button_brand">Register</a>
+			<span class="small slds-m-horizontal_xxx-small"> or </span>
+			<a href="{!v.loginBaseURL}" class="slds-button slds-button_neutral">Log&nbsp;in</a>
+
+		</div>
+	</div>
+
+
+</aura:component>

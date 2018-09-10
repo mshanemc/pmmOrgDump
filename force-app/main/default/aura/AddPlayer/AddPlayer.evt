@@ -1,0 +1,3 @@
+<aura:event type="APPLICATION" description="Add Player">
+    <aura:attribute name="player" type="String"/>
+</aura:event>

@@ -1,0 +1,224 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0px;
+    background-color: #F4F4F4;
+    color: #032e61;
+    font-size: 14px;
+}
+
+a {
+    color: #032e61;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background: url('/resource/pres_gen_images/320.png') no-repeat center left;
+    height: 320px;
+    width: 100%;
+    background-size: cover;
+}
+
+#header-text {
+    position: relative;
+    float: left;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.test-deck {
+    font-size: 8px;
+    color: lightgrey;
+}
+
+
+/*
+@media screen and (max-width: 320px) {
+	header {
+		background: url('320.png') center left;
+		height: 180px;
+	}
+}
+*/
+
+.creator {
+    padding: 5px;
+    max-width: 700px;
+    min-width: 300px;
+    margin: auto;
+}
+
+.category {
+    padding: 10px 0px;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.cat-title {
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid darkgrey;
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+.cat-desc {
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(75, 75, 75);
+    padding-top: 10px;
+    margin: 0px;
+}
+
+.cat-presenter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-presenter {
+    width: 200px;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-repeat: repeat-x;
+    background-position: -1px -1px;
+    background-size: 110% 110%;
+    border: 1px solid rgba(27, 31, 35, 0.2);
+    border-radius: 0.25em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.btn:hover {
+    background-color: lightgrey;
+}
+
+.btn-create {
+    color: #fff;
+    background-color: #215ca0;
+}
+
+.btn-create:hover {
+    background-color: #0c3667;
+    background-position: 0 -0.5em;
+    border-color: rgba(27, 31, 35, 0.5);
+}
+
+input {
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+input[type=checkbox] {
+    vertical-align: middle;
+    float: right;
+    margin: 5px;
+    padding: 0px;
+}
+
+li {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 10px;
+}
+
+ul {
+    /*max-width: 300px;
+    padding-left: 0px;*/
+    border-left: 1px dashed lightgrey;
+    ;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+.cat-flex {
+    display: flex;
+    justify-content: stretch;
+    flex-grow: 1;
+}
+
+.cat-flex-desc {
+    max-width: 300px;
+}
+
+.cat-flex-chex {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        background: url('/resource/pres_gen_images/1024s.png') center left;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background: url('/resource/pres_gen_images/768s.png') center left;
+        height: 180px;
+    }
+    /* reset form widths */
+    div.creator,
+    ul {
+        max-width: initial;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header {
+        background: url('/resource/pres_gen_images/425s.png') center left;
+        height: 180px;
+        background-size: cover;
+    }
+    .cat-flex {
+        flex-direction: column
+    }
+    .cat-flex-desc {
+        max-width: none;
+    }
+    .cat-flex-chex {
+        width: 100%;
+    }
+    ul {
+        /*max-width: 300px;
+        padding-left: 0px;*/
+        border-left: none;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+}

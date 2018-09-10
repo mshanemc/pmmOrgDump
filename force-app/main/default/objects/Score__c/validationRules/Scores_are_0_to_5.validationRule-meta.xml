@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scores_are_0_to_5</fullName>
+    <active>true</active>
+    <errorConditionFormula>or (
+Business_Value_Score__c &gt; 5,
+Business_Value_Score__c &lt; 0,
+Creativity__c &gt; 5,
+Creativity__c &lt; 0,
+Use_of_the_Platform__c &gt;5,
+Use_of_the_Platform__c &lt; 0
+)</errorConditionFormula>
+    <errorMessage>Scores are 0 to 5</errorMessage>
+</ValidationRule>

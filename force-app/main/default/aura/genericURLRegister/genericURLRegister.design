@@ -1,0 +1,7 @@
+<design:component >
+		<design:attribute name="regBaseURL" label="Registration Page Base URL" Description="" />
+		<design:attribute name="loginBaseURL" label="Login Page Base URL" Description="" />
+		<design:attribute name="actionWording" label="Action Wording" Description="" />
+
+
+	</design:component>

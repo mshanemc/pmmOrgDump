@@ -1,0 +1,32 @@
+<aura:component implements="force:hasRecordId,flexipage:availableForAllPageTypes" access="global" >
+    <aura:handler event="c:ProjectSelectionEvent" action="{!c.handleProjectSelectionEvent}"/>    
+    <aura:registerEvent name="projectChangedEvent" type="c:ProjectChangedEvent"/>
+    <aura:attribute name="title" type="String" default="Record View" />
+    <aura:attribute name="toggleChatter" type="boolean" default="true"/>
+    
+    <aura:attribute name="record" type="Object" />
+    <aura:attribute name="simpleRecord" type="Object" />
+    <aura:attribute name="recordError" type="String" />
+    
+    <aura:if isTrue="{!v.toggleChatter}">
+        <lightning:card >
+            <lightning:tabset >
+                <lightning:tab label="Record">
+                    <aura:if isTrue="{!(v.recordId != null)}">
+                        <div class="slds-text-align_right slds-p-bottom_small">
+                            <a href="{!'/one/one.app#/sObject/' + v.recordId + '/view'}" target="_blank" class="slds-button slds-button_neutral slds-m-right_small">Open</a>
+                            <lightning:button variant="brand" label="Save" onclick="{! c.save }" />
+                        </div>
+                        <force:recordEdit aura:id="edit" recordId="{!v.recordId}" />
+                    </aura:if>
+                </lightning:tab>
+                <lightning:tab label="Chatter">
+                    <aura:if isTrue="{!(v.recordId != null)}">
+                        <forceChatter:publisher context="RECORD" recordId="{!v.recordId}" />
+                        <forceChatter:feed type="Record" subjectId="{!v.recordId}" />
+                    </aura:if>
+                </lightning:tab>
+            </lightning:tabset>
+        </lightning:card>
+    </aura:if>                
+</aura:component>

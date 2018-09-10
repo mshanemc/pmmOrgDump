@@ -1,0 +1,313 @@
+<apex:page applyBodyTag="false" applyHtmlTag="false" controller="presentationGenerator" docType="html-5.0" standardStylesheets="false" title="Presentation Generator" showHeader="false">
+
+<!-- <apex:stylesheet value="/resources/pres_gen_styles.css" /> -->
+<apex:stylesheet value="{!URLFOR($Resource.pres_gen_styles)}" />
+
+
+<html>
+
+<head>
+  <title>Sales Cloud Custom Deck Creator</title>
+  <meta charset='utf-8' />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+</head>
+
+<header>
+</header>
+
+<body>
+
+  <div id="html">
+
+    <!--<img class="banner" src="1440s.png" alt="">-->
+    <button class="btn" id="authorize-button">Authorize</button>
+
+    <a href="https://platformmarketing.my.salesforce.com/services/auth/oauth/GDrive">Authorize Google Docs</a>
+
+    <div id="creator" class="creator" style="display: none;">
+
+
+      <!-- Descirption -->
+      <p class="cat-desc">Use this slide picker tool to remove all un-needed slides from the
+        <a href="https://docs.google.com/presentation/d/1bxMhA6Dlmzj4bUTkiN0cTa8ZZTwfODxBXCP6eOg7Q0c/edit?usp=sharing">Sales Cloud First Call Deck</a>. Making it easy and fast to create a customize deck for each meeting.</p>
+
+
+      <!-- Customer Name -->
+      <div class="category">
+        <p class="cat-title">Account/Customer Name</p>
+        <input id="customer-name" type="text" placeholder="Customer Name" />
+      </div>
+
+      <!-- Presenter Name &amp; Title -->
+      <div class="category">
+        <p class="cat-title">Presenter Information</p>
+        <div class="cat-presenter">
+          <input class="input-presenter" id="presenter-name" type="text" placeholder="Presenter Name" />
+          <input class="input-presenter" id="presenter-title" type="text" placeholder="Presenter Title" />
+          <input class="input-presenter" id="presenter-email" type="text" placeholder="Presenter Email" />
+        </div>
+      </div>
+
+
+
+
+      <!-- Intro -->
+      <div class="category">
+        <p class="cat-title">Introductory Message Track</p>
+        <div class="cat-flex">
+          <div class="cat-flex-desc">
+            <p class="cat-desc">Select the message will resonate better with your prospect customer. Some customers are far away from AI and
+              need more grounding on basic CRM functionality. Each theme connects to a different way to introduce sales cloud.</p>
+
+          </div>
+          <div class="cat-flex-chex">
+            <ul>
+              <li>Sales Cloud 101
+                <input id="cat1-1" type="checkbox" />
+              </li>
+
+              <li>First Smartest CRM - AI
+                <input id="cat1-2" type="checkbox" />
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- About Salesforce -->
+      <div class="category">
+        <p class="cat-title">About Salesforce</p>
+
+        <div class="cat-flex">
+          <div class="cat-flex-desc">
+            <p class="cat-desc">Select the topic areas that would help better educate your prospect customer on Salesforce and the Salescloud.</p>
+
+          </div>
+          <div class="cat-flex-chex">
+            <ul>
+              <li>What is Salesforce?
+                <input id="cat2-1" type="checkbox" />
+              </li>
+
+              <li>Sales Cloud Positioning
+                <input id="cat2-2" type="checkbox" />
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+
+        <!-- Business Challenge -->
+        <div class="category">
+          <p class="cat-title">Business Challenge </p>
+
+          <div class="cat-flex">
+            <div class="cat-flex-desc">
+              <p class="cat-desc">Select the business challenges your customer is facing. Each business challenge is associated with Sales Cloud
+                or a Sales Cloud add-on. Select multiple challenges so that you can identify cross-sell and up-sell opportunities.</p>
+
+            </div>
+            <div class="cat-flex-chex">
+              <ul>
+                <li>Multiple Source of Sales Data
+                  <input id="cat3-1" type="checkbox" />
+                </li>
+
+                <li>Unique Sales Process
+                  <input id="cat3-2" type="checkbox" />
+                </li>
+
+                <li>Customization
+                  <input id="cat3-3" type="checkbox" />
+                </li>
+
+                <li>Configure, Price &amp; Quote
+                  <input id="cat3-4" type="checkbox" />
+                </li>
+
+                <li>Email Integration
+                  <input id="cat3-5" type="checkbox" />
+                </li>
+
+                <li>Sales Productivity
+                  <input id="cat3-6" type="checkbox" />
+                </li>
+
+                <li>Marketing Alignment
+                  <input id="cat3-7" type="checkbox" />
+                </li>
+
+                <li>Activate Channel
+                  <input id="cat3-8" type="checkbox" />
+                </li>
+
+                <li>Sales Visibility and Insight
+                  <input id="cat3-9" type="checkbox" />
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+
+
+          <p class="cat-desc">For more in-depth information and assets on each challenge, view this
+            <a href="https://salesforce.quip.com/Xu9cAqUD9NeO">Cheat Sheet</a>.
+          </p>
+
+        </div>
+
+        <!-- Differentiators -->
+        <div class="category">
+          <p class="cat-title">Differentiators</p>
+
+          <div class="cat-flex">
+            <div class="cat-flex-desc">
+              <p class="cat-desc">Select the Salesforce differentiators that would convince your customer to buy Salesforce over another competitor.
+                These are key value drivers that our competitors do not provide.</p>
+            </div>
+            <div class="cat-flex-chex">
+              <ul>
+                <li>Industry Leadership
+                  <input id="cat4-1" type="checkbox" />
+                </li>
+
+                <li>Platform
+                  <input id="cat4-2" type="checkbox" />
+                </li>
+
+                <li>Trailhead
+                  <input id="cat4-3" type="checkbox" />
+                </li>
+
+                <li>Appexchange
+                  <input id="cat4-4" type="checkbox" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer Stories - Industries -->
+        <div class="category">
+          <p class="cat-title">Industry</p>
+
+          <div class="cat-flex">
+            <div class="cat-flex-desc">
+              <p class="cat-desc">Select the industry that your prospect customer is in, so that you can provide your customer with stories that
+                most closely identifies with their industry.</p>
+
+            </div>
+            <div class="cat-flex-chex">
+              <ul>
+                <li>Automative &amp; Manufacturing
+                  <input id="cat5-1" type="checkbox" />
+                </li>
+
+                <li>Financial Services
+                  <input id="cat5-2" type="checkbox" />
+                </li>
+
+                <li>High Tech
+                  <input id="cat5-3" type="checkbox" />
+                </li>
+
+                <li>Life Sciences
+                  <input id="cat5-4" type="checkbox" />
+                </li>
+
+                <li>Media &amp; Communications
+                  <input id="cat5-5" type="checkbox" />
+                </li>
+
+                <li>Nonprofit
+                  <input id="cat5-6" type="checkbox" />
+                </li>
+
+                <li>Professional Services
+                  <input id="cat5-7" type="checkbox" />
+                </li>
+
+                <li>Real Estate
+                  <input id="cat5-8" type="checkbox" />
+                </li>
+
+                <li>Retail
+                  <input id="cat5-9" type="checkbox" />
+                </li>
+
+                <li>Travel &amp; Hospitality
+                  <input id="cat5-10" type="checkbox" />
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+        <!-- Company Size -->
+        <div class="category">
+          <p class="cat-title">Size of business</p>
+
+          <div class="cat-flex">
+            <div class="cat-flex-desc">
+              <p class="cat-desc">Select the size of business that your prospect customer most closely identifies with, so that you can provide
+                customer stories that are the same company size as your prospect customer.</p>
+
+            </div>
+            <div class="cat-flex-chex">
+              <ul>
+                <li>Enterprise
+                  <input id="cat6-1" type="checkbox" />
+                </li>
+
+                <li>Commercial
+                  <input id="cat6-2" type="checkbox" />
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div>
+          <h1>
+            <a href="#" id="new-deck" target="_blank"></a>
+          </h1>
+        </div>
+
+
+        <!-- CUSTOM DECK -->
+
+        <button class="btn btn-create" id="create-button">Create My Deck</button>
+
+
+        <pre id="content"></pre>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
+
+
+<apex:includeScript value="{!$Resource.pres_gen_js}" />
+<script type="text/javascript">
+  // presentationGenerator.getAccessToken(function (result) {
+  //     console.log(`token is ${result}`);
+  //     var gapiToken = result;
+  // });
+</script>
+<script async="true" defer="true" src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()"/>
+
+</apex:page>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- type all you want here...it&apos;s only on the detail page --></help>
+    <label><!-- Full Description --></label>
+    <name>Full_Description__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,25 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">
+
+  <aura:attribute name="source" type="string" access="public" required="true"/>
+  <aura:attribute name="targetFields" type="Object"/>
+  <aura:attribute name="targetError" type="Object" />
+
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+  <force:recordData aura:id="frd" targetFields="{!v.targetFields}" layoutType="FULL" targetError="{!v.targetError}" />
+
+  <div class="slds-box">
+    <lightning:layout pullToBoundary="small" verticalAlign="end">
+      <lightning:layoutItem padding="around-small" flexibility="grow">
+        <lightning:input aura:id="contactField" label="Email" value="{!v.targetFields.Email__c}" />
+      </lightning:layoutItem>
+      <lightning:layoutItem padding="around-small" flexibility="no-flex">
+        <lightning:button label="Save" variant="brand" onclick="{!c.handleSave}" />
+      </lightning:layoutItem>
+    </lightning:layout>
+      {!v.targetError}
+  </div>
+
+  <c:LightningErrorHandler aura:id="leh"/>
+
+</aura:component>

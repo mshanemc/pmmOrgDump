@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- when a new user is created, what profile do they get? --></help>
+    <label><!-- Default Profile ID --></label>
+    <name>Default_Profile_ID__c</name>
+</CustomFieldTranslation>

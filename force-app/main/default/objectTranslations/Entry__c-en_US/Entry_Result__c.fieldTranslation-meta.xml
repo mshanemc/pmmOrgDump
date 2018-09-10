@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Entry Result --></label>
+    <name>Entry_Result__c</name>
+    <picklistValues>
+        <masterLabel>Disqualified</masterLabel>
+        <translation><!-- Disqualified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not a Winner</masterLabel>
+        <translation><!-- Not a Winner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not yet Submitted</masterLabel>
+        <translation><!-- Not yet Submitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scoring Complete</masterLabel>
+        <translation><!-- Scoring Complete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted - Not Reviewed</masterLabel>
+        <translation><!-- Submitted - Not Reviewed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted - Under Review</masterLabel>
+        <translation><!-- Submitted - Under Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Winner</masterLabel>
+        <translation><!-- Winner --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

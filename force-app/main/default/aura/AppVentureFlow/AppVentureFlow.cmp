@@ -1,0 +1,32 @@
+<aura:component implements="force:hasRecordId,forceCommunity:availableForAllPageTypes,force:appHostable,flexipage:availableForAllPageTypes">
+
+	<aura:attribute name="flowName" type="string" default="AppVenture_Submission" access="public" required="true"/>
+	<aura:attribute name="finishURL" type="string" access="public"/>
+	<aura:attribute name="finishId" type="string"  access="public"/>
+	<aura:attribute name="finishIdVar" type="string"  access="public"  />
+	<aura:attribute name="recordId" type="string" />
+
+	<force:recordData aura:id="frd" mode="VIEW" recordId="{!v.recordId}" targetFields="{!v.targetFields}" layoutType="FULL"
+		fields="Date_Status__c,Externally_visible__c, Start_Accepting_Entries__c" recordUpdated="{!c.doInit}"/>
+	<aura:attribute name="targetFields" type="Object" />
+
+	<lightning:flow aura:id="flowData" onstatuschange="{!c.change}"/>
+
+	<aura:if isTrue="{!v.targetFields}">
+
+		<aura:if isTrue="{!v.targetFields.Date_Status__c=='not yet'}">
+			The contest is not accepting entries yet.  Check back when it opens <lightning:formattedDateTime value="{!v.targetFields.Start_Accepting_Entries__c}"/>.
+		</aura:if>
+
+		<aura:if isTrue="{!v.targetFieldsDate_Status__c=='too late'}">
+			The contest is not accepting entries because its deadline has passed.
+		</aura:if>
+
+		<aura:if isTrue="{!!v.targetFields.Externally_visible__c}">
+			The contest is temporarily closed.  Please check back soon.
+		</aura:if>
+
+	</aura:if>
+
+
+</aura:component>

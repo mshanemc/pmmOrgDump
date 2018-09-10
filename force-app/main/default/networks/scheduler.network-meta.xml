@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowInternalUserLogin>true</allowInternalUserLogin>
+    <allowMembersToFlag>false</allowMembersToFlag>
+    <changePasswordTemplate>unfiled$public/CommunityChangePasswordEmailTemplate</changePasswordTemplate>
+    <communityRoles>
+        <customerUserRole>Trailblazer</customerUserRole>
+        <employeeUserRole>Employee</employeeUserRole>
+        <partnerUserRole/>
+    </communityRoles>
+    <disableReputationRecordConversations>true</disableReputationRecordConversations>
+    <emailSenderAddress>shane.mclaughlin@salesforce.com</emailSenderAddress>
+    <emailSenderName>Lightning Platform Workshops</emailSenderName>
+    <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
+    <enableDirectMessages>true</enableDirectMessages>
+    <enableGuestChatter>false</enableGuestChatter>
+    <enableGuestFileAccess>true</enableGuestFileAccess>
+    <enableInvitation>false</enableInvitation>
+    <enableKnowledgeable>false</enableKnowledgeable>
+    <enableNicknameDisplay>false</enableNicknameDisplay>
+    <enablePrivateMessages>false</enablePrivateMessages>
+    <enableReputation>false</enableReputation>
+    <enableShowAllNetworkSettings>false</enableShowAllNetworkSettings>
+    <enableSiteAsContainer>true</enableSiteAsContainer>
+    <enableTalkingAboutStats>true</enableTalkingAboutStats>
+    <enableTopicAssignmentRules>true</enableTopicAssignmentRules>
+    <enableTopicSuggestions>false</enableTopicSuggestions>
+    <enableUpDownVote>true</enableUpDownVote>
+    <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
+    <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
+    <navigationLinkSet>
+        <navigationMenuItem>
+            <defaultListViewId>My_Registrations</defaultListViewId>
+            <label>My Registrations</label>
+            <position>1</position>
+            <publiclyAvailable>false</publiclyAvailable>
+            <target>/registration/Registration__c/00B460000042JNbEAM</target>
+            <type>InternalLink</type>
+        </navigationMenuItem>
+        <navigationMenuItem>
+            <label>TDX18 Workshops</label>
+            <position>2</position>
+            <publiclyAvailable>true</publiclyAvailable>
+            <target>https://isvsi-14ddd2ecd93-159a7094ef-15ab9e95e81.force.com/scheduler/s/live-event/a0C46000001UxyQEAS/tdx-2018</target>
+            <targetPreference>OpenExternalLinkInSameTab</targetPreference>
+            <type>ExternalLink</type>
+        </navigationMenuItem>
+    </navigationLinkSet>
+    <networkMemberGroups>
+        <profile>Admin</profile>
+        <profile>Workshop Reg</profile>
+    </networkMemberGroups>
+    <networkPageOverrides>
+        <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
+        <forgotPasswordPageOverrideSetting>Designer</forgotPasswordPageOverrideSetting>
+        <homePageOverrideSetting>Designer</homePageOverrideSetting>
+        <loginPageOverrideSetting>Designer</loginPageOverrideSetting>
+        <selfRegProfilePageOverrideSetting>Designer</selfRegProfilePageOverrideSetting>
+    </networkPageOverrides>
+    <picassoSite>scheduler1</picassoSite>
+    <selfRegProfile>workshop reg</selfRegProfile>
+    <selfRegistration>true</selfRegistration>
+    <sendWelcomeEmail>true</sendWelcomeEmail>
+    <site>scheduler</site>
+    <status>Live</status>
+    <tabs>
+        <defaultTab>home</defaultTab>
+        <standardTab>Chatter</standardTab>
+    </tabs>
+    <urlPathPrefix>scheduler</urlPathPrefix>
+    <welcomeTemplate>TDX18/TDX18_Platform_Workshops_New_Member_Welcome_Email</welcomeTemplate>
+</Network>

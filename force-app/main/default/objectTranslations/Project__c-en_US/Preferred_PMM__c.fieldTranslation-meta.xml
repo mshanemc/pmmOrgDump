@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- who do you want to do this project? (optional) --></help>
+    <label><!-- Preferred PMM --></label>
+    <name>Preferred_PMM__c</name>
+    <relationshipLabel><!-- Projects (Preferred PMM) --></relationshipLabel>
+</CustomFieldTranslation>

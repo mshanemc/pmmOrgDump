@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Score 0-5 (5 is the highest) --></help>
+    <label><!-- Business Value Score --></label>
+    <name>Business_Value_Score__c</name>
+</CustomFieldTranslation>

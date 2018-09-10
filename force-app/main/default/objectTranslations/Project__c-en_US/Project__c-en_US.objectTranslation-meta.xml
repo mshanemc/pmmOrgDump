@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Projects</value>
+    </caseValues>
+    <layouts>
+        <layout>Project Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Metrics --></label>
+            <section>Metrics</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Co-Owner --></label>
+        <name>Add_Co_Owner</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Child Project --></label>
+        <name>Child_Project</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- priority must be a positive value --></errorMessage>
+        <name>no_priority_less_than_0</name>
+    </validationRules>
+</CustomObjectTranslation>

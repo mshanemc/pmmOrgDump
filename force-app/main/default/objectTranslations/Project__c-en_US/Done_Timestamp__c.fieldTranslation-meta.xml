@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- set by the system, when this moves to Done --></help>
+    <label><!-- Done Timestamp --></label>
+    <name>Done_Timestamp__c</name>
+</CustomFieldTranslation>

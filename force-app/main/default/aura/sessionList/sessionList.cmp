@@ -1,0 +1,12 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,force:hasRecordId" controller="workshopsClass">
+
+	<aura:attribute name="sessionData" type="object" />
+	<aura:attribute name="tableColumns" type="List" />
+	<aura:attribute name="isRegistered" type="boolean" default="true" />
+
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	<c:LightningErrorHandler aura:id="leh"/>
+
+	<lightning:datatable data="{! v.sessionData }" columns="{! v.tableColumns }" keyField="id" onrowaction="{!c.handleRowAction}" hideCheckboxColumn="true"/>
+
+</aura:component>

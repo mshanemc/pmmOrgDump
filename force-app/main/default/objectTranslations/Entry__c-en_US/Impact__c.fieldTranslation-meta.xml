@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Impact --></label>
+    <name>Impact__c</name>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a department</masterLabel>
+        <translation><!-- a department --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a few departments</masterLabel>
+        <translation><!-- a few departments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a few people</masterLabel>
+        <translation><!-- a few people --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>everyone except the dog</masterLabel>
+        <translation><!-- everyone except the dog --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- We&apos;ve had a few rebrands...App Cloud, Salesforce Platform, Lightning Platform, Salesforce1 Platform... --></help>
+    <label><!-- Branding --></label>
+    <name>Branding__c</name>
+    <picklistValues>
+        <masterLabel>App Cloud</masterLabel>
+        <translation><!-- App Cloud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Force.com</masterLabel>
+        <translation><!-- Force.com --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lightning Platform</masterLabel>
+        <translation><!-- Lightning Platform --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce Platform</masterLabel>
+        <translation><!-- Salesforce Platform --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce1 Lightning</masterLabel>
+        <translation><!-- Salesforce1 Lightning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce1 Platform</masterLabel>
+        <translation><!-- Salesforce1 Platform --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

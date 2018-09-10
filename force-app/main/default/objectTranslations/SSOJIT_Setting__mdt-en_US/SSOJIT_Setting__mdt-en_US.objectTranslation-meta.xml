@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SSOJIT Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SSOJIT Settings</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The suffix should be the stuff AFTER the @ sign, not including the @ sign itself. --></errorMessage>
+        <name>No_at_sign_in_the_suffix</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- profile should start with 00e --></errorMessage>
+        <name>Profiles_start_with_00e</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The suffix should be something.something (there&apos;s a dot in there, buddy!) --></errorMessage>
+        <name>Suffix_needs_a_dot_in_middle</name>
+    </validationRules>
+</CustomObjectTranslation>

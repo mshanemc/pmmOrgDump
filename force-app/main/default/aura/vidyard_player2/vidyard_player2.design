@@ -1,0 +1,3 @@
+<design:component label="VidyardPlayer Responsive">
+    <design:attribute name="player" label="Default Player UUID" description="The initial player that will load when this component is first loaded." />
+</design:component>

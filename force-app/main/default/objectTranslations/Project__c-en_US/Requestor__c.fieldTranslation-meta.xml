@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- the person who is making the request.  If you don&apos;t see someone here that should be, please notify an Admin to add the user to the options --></help>
+    <label><!-- Requestor --></label>
+    <name>Requestor__c</name>
+    <relationshipLabel><!-- Projects (Requestor) --></relationshipLabel>
+</CustomFieldTranslation>

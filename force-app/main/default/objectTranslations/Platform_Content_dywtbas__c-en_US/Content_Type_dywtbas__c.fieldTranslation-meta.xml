@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Content Type --></label>
+    <name>Content_Type_dywtbas__c</name>
+    <picklistValues>
+        <masterLabel>Article</masterLabel>
+        <translation><!-- Article --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Datasheet</masterLabel>
+        <translation><!-- Datasheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demo</masterLabel>
+        <translation><!-- Demo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Call Deck</masterLabel>
+        <translation><!-- First Call Deck --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Free Trial</masterLabel>
+        <translation><!-- Free Trial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interactive</masterLabel>
+        <translation><!-- Interactive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Report</masterLabel>
+        <translation><!-- Report --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Video</masterLabel>
+        <translation><!-- Video --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Webinar</masterLabel>
+        <translation><!-- Webinar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Whitepaper</masterLabel>
+        <translation><!-- Whitepaper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ebook</masterLabel>
+        <translation><!-- ebook --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- App description, Why you scored it the way you did, anything you think useful. Put your notes here instead of in the chatter field please! --></help>
+    <label><!-- Judge Notes --></label>
+    <name>Judge_Notes__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asset_Description__c</fullName>
+    <description>Describe the actual asset you are creating</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Describe the asset you are creating. Please be as specific as possible</inlineHelpText>
+    <label>Asset Description</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

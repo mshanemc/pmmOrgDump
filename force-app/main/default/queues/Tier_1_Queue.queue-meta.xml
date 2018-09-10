@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>tier1@example.com</email>
+    <name>Tier 1 Queue</name>
+    <queueMembers>
+        <users>
+            <user>bill.hzx4h3ctu4la.ytrjhffu2cyg.qyqorig27hq6@platformers.org</user>
+            <user>cindy.foqthdcitv9k.4o7yollut9rf.nzuhex3o0hdr@platformers.org</user>
+            <user>customer.qulfmaf3gjwb.ti3hkijpwsf5.ojcd2y3qhnqe@platformers.org</user>
+            <user>elliot.6eioscyn4zd1.8kxipniwx8aq.ylen2maep4jr@platformers.org</user>
+            <user>ely.n5hhq0lbfay4.c3urybfr1vwl.ooaxgiqeb1pl@platformers.org</user>
+            <user>partner.rlhrsdw5odis.nldixdcdjcva.zdy7nucpkmxq@platformers.org</user>
+            <user>quinton.ogzpogqekczi.x5dnm8t1vldz.ee7wqnlpax26@platformers.org</user>
+            <user>shane@platformers.org</user>
+            <user>sue.9afdirlighit.nu56sw6sfxre.gfynynvpb3bz@platformers.org</user>
+            <user>tim.eyq67hwdf6du.qvfotcssijjk.c9hezzyrhhkt@platformers.org</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

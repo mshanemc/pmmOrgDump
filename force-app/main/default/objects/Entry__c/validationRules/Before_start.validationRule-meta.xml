@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Before_start</fullName>
+    <active>true</active>
+    <errorConditionFormula>and(
+  ISCHANGED(CreatedDate),
+  now() &lt; Contest__r.Start_Accepting_Entries__c
+)</errorConditionFormula>
+    <errorMessage>The contest is not accepting entries yet.</errorMessage>
+</ValidationRule>

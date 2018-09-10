@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+                <label>Analyst</label>
+            </value>
+            <value>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+                <label>Prospect</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>Celebrity</fullName>
+                <default>false</default>
+                <label>Celebrity</label>
+            </value>
+            <value>
+                <fullName>Public Official</fullName>
+                <default>false</default>
+                <label>Public Official</label>
+            </value>
+            <value>
+                <fullName>Academic</fullName>
+                <default>false</default>
+                <label>Academic</label>
+            </value>
+            <value>
+                <fullName>ISV</fullName>
+                <default>false</default>
+                <label>ISV</label>
+            </value>
+            <value>
+                <fullName>ISV Partner</fullName>
+                <default>false</default>
+                <label>ISV Partner</label>
+            </value>
+            <value>
+                <fullName>SI Partner</fullName>
+                <default>false</default>
+                <label>SI Partner</label>
+            </value>
+            <value>
+                <fullName>Blogger</fullName>
+                <default>false</default>
+                <label>Blogger</label>
+            </value>
+            <value>
+                <fullName>Independent Expert</fullName>
+                <default>false</default>
+                <label>Independent Expert</label>
+            </value>
+            <value>
+                <fullName>Financial</fullName>
+                <default>false</default>
+                <label>Financial</label>
+            </value>
+            <value>
+                <fullName>Industry Association</fullName>
+                <default>false</default>
+                <label>Industry Association</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

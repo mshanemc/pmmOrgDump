@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(
+  and (Start_Accepting_Entries__c &lt; NOW(), NOW()&lt; Stop_Accepting_Entries__c),
+  &quot;open&quot;,
+  if ( 
+    Start_Accepting_Entries__c &gt; NOW(), 
+    &quot;not yet&quot;,
+    if ( 
+      Stop_Accepting_Entries__c &gt; NOW(),
+      &quot;too late&quot;,
+      &quot;huh&quot;
+    )
+  )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Date Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

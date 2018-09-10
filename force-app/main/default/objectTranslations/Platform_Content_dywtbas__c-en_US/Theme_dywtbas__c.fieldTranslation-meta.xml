@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What theme does this piece of content fall under? Especially important for TOFU content that is not associated with a product --></help>
+    <label><!-- Theme --></label>
+    <name>Theme_dywtbas__c</name>
+    <picklistValues>
+        <masterLabel>AI</masterLabel>
+        <translation><!-- AI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>App Dev</masterLabel>
+        <translation><!-- App Dev --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Experience</masterLabel>
+        <translation><!-- Customer Experience --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee Engagement</masterLabel>
+        <translation><!-- Employee Engagement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General IT</masterLabel>
+        <translation><!-- General IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Integration</masterLabel>
+        <translation><!-- Integration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IoT</masterLabel>
+        <translation><!-- IoT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mobile</masterLabel>
+        <translation><!-- Mobile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Security</masterLabel>
+        <translation><!-- Security --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

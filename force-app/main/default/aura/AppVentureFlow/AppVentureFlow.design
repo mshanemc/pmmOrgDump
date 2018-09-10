@@ -1,0 +1,7 @@
+<design:component >
+		<design:attribute name="flowName" label="Flow Name" Description="api name of the flow you want to run" />
+		<design:attribute name="finishURL" label="finish URL" Description="hardcode a url to go to when you finish" />
+		<design:attribute name="finishId" label="Finish Id" Description="hardcode a record ID to go to when you finish" />
+		<design:attribute name="finishIdVar" label="Finish Id Variable" Description="the name of the output variable that contain the recordID you want to go to when you finish the flow" />
+
+</design:component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contains_Customer_Story_dywtbas__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Select if this asset contains a customer</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Does this asset involve a customer company or Trailblazer?</inlineHelpText>
+    <label>Contains Customer Story</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,force:appHostable,flexipage:availableForAllPageTypes" controller="vy_ltng_cmpt.vy_currentUserController" access="global">
+    <aura:attribute name="runningUser" type="User" />
+    <aura:attribute name="player" type="String" access="global" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <aura:handler name="render" value="{!this}" action="{!c.doRender}" />
+
+    <div class="player" id="player">
+    	<iframe src="{!'https://play.vidyard.com/' + v.player + '?vysfid=' + v.runningUser.Id + '&amp;flash_first=0&amp;autoplay=0&amp;no_html_fullscreen=0'}" width="560" height="315" frameborder="0" allowfullscreen="true" class="vidyardFrame"></iframe>
+   	</div>
+</aura:component>

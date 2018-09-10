@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION">
+	<aura:attribute name="recordId" type="String" />
+    <aura:attribute name="projectId" type="String" />
+    <aura:attribute name="taskId" type="String" />    
+</aura:event>

@@ -1,0 +1,4 @@
+<design:component >
+	<design:attribute name="title" label="Title" />
+	<design:attribute name="status" label="Status" datasource="Requested,Committed,In Progress,Done,Blocked,Won't do" />
+</design:component>

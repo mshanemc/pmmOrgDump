@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Appventure_not_a_winner</fullName>
+        <description>Appventure not a winner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Appventure_Emails/Appventure_Not_Winner</template>
+    </alerts>
+    <alerts>
+        <fullName>Appventure_winner</fullName>
+        <description>Appventure winner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Appventure_Emails/Appventure_Winner</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Mark_Submitted</fullName>
+        <field>Entry_Result__c</field>
+        <literalValue>Submitted - Not Reviewed</literalValue>
+        <name>Mark Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Mark_Submitted2</fullName>
+        <field>Entry_Result__c</field>
+        <literalValue>Submitted - Not Reviewed</literalValue>
+        <name>Mark Submitted2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Timestamp</fullName>
+        <field>Submission_Timestamp__c</field>
+        <formula>now()</formula>
+        <name>Timestamp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

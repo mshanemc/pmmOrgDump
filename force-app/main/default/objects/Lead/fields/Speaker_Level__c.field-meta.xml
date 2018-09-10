@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Speaker_Level__c</fullName>
+    <externalId>false</externalId>
+    <label>Speaker Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Still Learning</fullName>
+                <default>false</default>
+                <label>Still Learning</label>
+            </value>
+            <value>
+                <fullName>Almost There</fullName>
+                <default>false</default>
+                <label>Almost There</label>
+            </value>
+            <value>
+                <fullName>Acceptable</fullName>
+                <default>false</default>
+                <label>Acceptable</label>
+            </value>
+            <value>
+                <fullName>Above Average</fullName>
+                <default>false</default>
+                <label>Above Average</label>
+            </value>
+            <value>
+                <fullName>TED-level</fullName>
+                <default>false</default>
+                <label>TED-level</label>
+            </value>
+            <value>
+                <fullName>Oprah</fullName>
+                <default>false</default>
+                <label>Oprah</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

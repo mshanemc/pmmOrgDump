@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Judge_Notes__c</fullName>
+    <description>App description, Why you scored it the way you did, anything you think useful</description>
+    <externalId>false</externalId>
+    <inlineHelpText>App description, Why you scored it the way you did, anything you think useful. Put your notes here instead of in the chatter field please!</inlineHelpText>
+    <label>Judge Notes</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

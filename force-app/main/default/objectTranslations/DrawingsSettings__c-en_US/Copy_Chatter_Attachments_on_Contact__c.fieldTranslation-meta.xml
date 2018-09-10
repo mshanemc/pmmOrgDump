@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- copies the most recent photo attachment on a contact to be the contact&apos;s chatter profile photo (if the contact is also a community user) --></help>
+    <label><!-- Copy Chatter Attachments on Contact --></label>
+    <name>Copy_Chatter_Attachments_on_Contact__c</name>
+</CustomFieldTranslation>

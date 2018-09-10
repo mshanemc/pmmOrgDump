@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EMEA__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>tracking which entries have come from EMEA</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check box if entry comes from one of the eligible EMEA countries.</inlineHelpText>
+    <label>EMEA</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

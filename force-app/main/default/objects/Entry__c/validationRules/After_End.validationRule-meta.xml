@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>After_End</fullName>
+    <active>true</active>
+    <errorConditionFormula>and(
+ISCHANGED(CreatedDate),
+now() &gt; Contest__r.Stop_Accepting_Entries__c
+)</errorConditionFormula>
+    <errorMessage>The contest is no longer accepting entries.</errorMessage>
+</ValidationRule>
